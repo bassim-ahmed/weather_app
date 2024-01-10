@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>weather app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="current-info">
+        <div class="weather-input">
+          <h3>Enter a City Name</h3>
+          <input
+            class="city-input"
+            type="text"
+            placeholder="E.g., New York, London, Tokyo"
+            id="city-input"
+          />
+          <button class="search-btn" id="search-btn">Search</button>
+          <div class="separator"></div>
+          <button class="location-btn">Use Current Location</button>
+        </div>
+        <div
+          class="info d-flex flex-column-reverse align-items-center text-center"
+        >
+          <div class="date-container">
+            <div class="date" id="date">(-------)</div>
+            <div class="others" id="current-weather-items">
+              <div class="weather-item">
+                <div>Temperature</div>
+                <div>(----)</div>
+              </div>
+              <div class="weather-item">
+                <div>Wind</div>
+                <div>(------)</div>
+              </div>
+              <div class="weather-item">
+                <div>Humidity</div>
+                <div>(----)</div>
+              </div>
+            </div>
+          </div>
+          <div class="place-container">
+            <div class="time-zone" id="time-zone">
+              <div id="cityname" class="city">(-----)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="future-forecast">
+      <div class="card bg-transparent" style="width: 18rem">
+        <div class="card-body text-light text-center">
+          <h5 class="card-title">(----------)</h5>
+          <div class="others" id="current-weather-items">
+            <div class="weather-item">
+              <div>Temperature</div>
+              <div>(------)</div>
+            </div>
+            <div class="weather-item">
+              <div>Wind</div>
+              <div>(-----)</div>
+            </div>
+            <div class="weather-item">
+              <div>Humidity</div>
+              <div>(-----)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-transparent" style="width: 18rem">
+        <div class="card-body text-light text-center">
+          <h5 class="card-title">(----------)</h5>
+          <div class="others" id="current-weather-items">
+            <div class="weather-item">
+              <div>Temperature</div>
+              <div>(------)</div>
+            </div>
+            <div class="weather-item">
+              <div>Wind</div>
+              <div>(-----)</div>
+            </div>
+            <div class="weather-item">
+              <div>Humidity</div>
+              <div>(-----)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-transparent" style="width: 18rem">
+        <div class="card-body text-light text-center">
+          <h5 class="card-title">(----------)</h5>
+          <div class="others" id="current-weather-items">
+            <div class="weather-item">
+              <div>Temperature</div>
+              <div>(------)</div>
+            </div>
+            <div class="weather-item">
+              <div>Wind</div>
+              <div>(-----)</div>
+            </div>
+            <div class="weather-item">
+              <div>Humidity</div>
+              <div>(-----)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
