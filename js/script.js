@@ -26,7 +26,7 @@ const CreateWeatherCard=(cityName,weatherItem,index)=>{
           </div>
           <div class="weather-item">
             <div>${weatherItem.weather[0].description}</div>
-            <div> <img src="http://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@2x.png" class="w-icon"></div>
+            <div> <img src="https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@2x.png" class="w-icon"></div>
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@ const CreateWeatherCard=(cityName,weatherItem,index)=>{
         return ` <div class="card bg-transparent" style="width: 18rem;">
         <div class="card-body text-light text-center">
           <h5 class="card-title">${weatherItem.dt_txt.split(" ")[0]}</h5>
-          <img src="http://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@2x.png" class="card-img-top" alt="...">
+          <img src="https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@2x.png" class="card-img-top" alt="...">
           <div class="others" id="current-weather-items">
             <div class="weather-item">
               <div>Temperature</div>
@@ -66,7 +66,7 @@ const CreateWeatherCard=(cityName,weatherItem,index)=>{
 }
 
 const getWeatherDetails=(cityName,lat,lon)=>{
-    const WEATHER_API_URL = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}`;
+    const WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}`;
     fetch(WEATHER_API_URL)
     .then((res) => res.json())
     .then((data) => {
@@ -104,7 +104,7 @@ const getCityCoordinates = () => {
     const cityName = cityInput.value.trim();//The `trim()` function in JavaScript is used to remove white spaces 
      if(!cityName) return;//if city name is empty
     //  console.log(cityName);
-    const GEOCODING_API_URL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
+    const GEOCODING_API_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
     fetch(GEOCODING_API_URL)
     .then((res) => res.json())
     .then((data) => {
